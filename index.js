@@ -34,7 +34,7 @@ app.use("/products", productRoutes);
 
 const PORT = process.env.PORT || 9999;
 
-app.listen(PORT, async() => {
+app.listen(PORT, () => {
   connectToDB();
   console.log(`Server is running on port http://localhost:${PORT}`);
   
